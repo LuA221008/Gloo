@@ -1,6 +1,6 @@
-h2 {
+h1 {
   text-align: center;
-  color: #e9eaec;
+  color: #006691;
 }
 
 .container {
@@ -18,6 +18,14 @@ h2 {
 }
 .gloo {
   grid-column: 1;
-  background-image: url("https://lh3.googleusercontent.com/6UL53O7ZIWHQzWLMUxxxsJ7IWYvNMdpai9h37FH-9JRry4rQYL5i26kbTTcRKGQLcqPmzxXzO1NleU4A1guNKFvQCDzbMfjq-T-TpQBTIcrF13Sc4kLDEztz1YGkztizUA=w1280");
+  background-image: url("https://lh5.googleusercontent.com/COuZXIGKky19VOoe1vg3NzFKJ3FSWFXamEFemViT4KhyJCrgBowaJFTlr7tLT3jxtfw-sDboOEjBQx68-fukhEFjmNN2jg_WzCiSuQgBfIOEIJG7a6Id7GzBI3CXyJ-OlQ=w1280");
   background-repeat: no-repeat;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  color: #ffffff;
+  background-color: #006691;
 }
