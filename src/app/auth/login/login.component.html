@@ -24,14 +24,17 @@
         </div>
 
         <div class="button">
-          <button type="button" class="btn mt-5" (click)="login()">
+          <button type="button" class="btn mt-3" (click)="login()">
             Iniciar Sesion
           </button>
         </div>
         <hr class="my-4" />
         <div class="d-grid mb-2">
+          <button type="button" class="btn mt-2" routerLink="/gloo/register">
+            Registrarse
+          </button>
           <button
-            class="btn btn-secondary text-uppercase fw-bold"
+            class="btn btn-secondary text-uppercase fw-bold mt-1"
             (click)="loginGoogle()"
           >
             <i class="bi bi-google"></i> Iniciar con Google
