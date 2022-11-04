@@ -1,0 +1,38 @@
+h1 {
+  padding-left: 14rem;
+}
+
+.container-register {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.register {
+  grid-column: 2;
+}
+.registro {
+  background-color: aliceblue;
+  height: 90%;
+  border-radius: 2rem;
+}
+
+.gloo {
+  grid-column: 1;
+  margin-top: 8rem;
+}
+.input {
+  padding-top: 5rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.title {
+  color: #313745;
+}
+
+#registrar,
+#regresar {
+  background-color: #637494;
+  color: aliceblue;
+}

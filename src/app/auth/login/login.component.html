@@ -2,23 +2,42 @@
 <div class="container">
   <div class="gloo"></div>
   <div class="content-login">
-    <div class="login">
-      <h1 class="fs-1 fw-bold">Iniciar Sesión</h1>
-      <input
-        class="form-control form-control-lg"
-        type="text"
-        placeholder="@email"
-        aria-label=".form-control-lg example"
-      />
-      <input
-        class="form-control form-control-lg mt-5"
-        type="text"
-        placeholder="Constraeña"
-        aria-label=".form-control-lg example"
-      />
-    </div>
-    <div class="button">
-      <button type="button" class="btn mt-5">Iniciar Sesion</button>
+    <div class="inicioSesion">
+      <form [formGroup]="formSingIn">
+        <div class="login">
+          <h1 class="title fs-1 fw-bold">Iniciar Sesión</h1>
+
+          <input
+            formControlName="email"
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="@email"
+            aria-label=".form-control-lg example"
+          />
+          <input
+            formControlName="password"
+            class="form-control form-control-lg mt-5"
+            type="password"
+            placeholder="Constraseña"
+            aria-label=".form-control-lg example"
+          />
+        </div>
+
+        <div class="button">
+          <button type="button" class="btn mt-5" (click)="login()">
+            Iniciar Sesion
+          </button>
+        </div>
+        <hr class="my-4" />
+        <div class="d-grid mb-2">
+          <button
+            class="btn btn-secondary text-uppercase fw-bold"
+            (click)="loginGoogle()"
+          >
+            <i class="bi bi-google"></i> Iniciar con Google
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

@@ -1,0 +1,22 @@
+.container-cards {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card1,
+.card2,
+.card3 {
+  margin-top: 10rem;
+  background-color: aliceblue;
+  height: 30rem;
+  width: 50rem;
+  border-radius: 0.5rem;
+  margin-left: 15%;
+}
+.card-title {
+  color: #313745;
+}
+#regresar {
+  background-color: #637494;
+  color: aliceblue;
+}
