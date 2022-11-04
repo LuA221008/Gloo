@@ -4,9 +4,8 @@ h1 {
 }
 
 .container {
-  width: 100%;
   height: 100%;
-
+  //background: linear-gradient(to right, #bdbcbb, #637494);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -16,10 +15,17 @@ h1 {
 .login {
   grid-column: 2;
 }
+.inicioSesion {
+  height: 100%;
+  border-radius: 2rem;
+  position: initial;
+}
 .gloo {
   grid-column: 1;
-  background-image: url("https://lh5.googleusercontent.com/COuZXIGKky19VOoe1vg3NzFKJ3FSWFXamEFemViT4KhyJCrgBowaJFTlr7tLT3jxtfw-sDboOEjBQx68-fukhEFjmNN2jg_WzCiSuQgBfIOEIJG7a6Id7GzBI3CXyJ-OlQ=w1280");
+  background-image: url("../../../assets/gloo2.png");
+  background-size: 200%;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .button {
   display: flex;
@@ -28,4 +34,7 @@ h1 {
 .btn {
   color: #ffffff;
   background-color: #006691;
+}
+.title {
+  color: #313745;
 }
