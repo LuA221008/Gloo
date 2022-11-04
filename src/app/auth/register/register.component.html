@@ -1,1 +1,87 @@
-<p>register works!</p>
+<app-navbar></app-navbar>
+<div class="container-register">
+  <div class="gloo">
+    <img src="../../../assets/gloo2.png" alt="gloo" class="img-fluid" />
+  </div>
+  <form [formGroup]="registerForm">
+    <div class="register">
+      <div class="registro m-5">
+        <div class="input">
+          <h1 class="title fs-1 fw-bold">Registro</h1>
+          <input
+            formControlName="nombreUsuario"
+            class="form-control form-control-lg mt-4"
+            type="text"
+            placeholder="Nombre"
+            aria-label=".form-control-lg example"
+          />
+          <input
+            formControlName="email"
+            class="form-control form-control-lg mt-4"
+            type="text"
+            placeholder="@email"
+            aria-label=".form-control-lg example"
+          />
+          <input
+            formControlName="password"
+            class="form-control form-control-lg mt-4"
+            type="text"
+            placeholder="Constraeña"
+            aria-label=".form-control-lg example"
+          />
+        </div>
+        <div
+          class="d-grid gap-2 col-6 mx-auto mt-3"
+          role="group"
+          aria-label="Basic radio toggle button group"
+        >
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio1"
+            autocomplete="off"
+            checked
+          />
+          <label class="btn btn-outline-secondary" for="btnradio1"
+            >Usuario</label
+          >
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio2"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="btnradio2"
+            >Proveedor</label
+          >
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio3"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="btnradio3"
+            >Profesional de Salud</label
+          >
+        </div>
+        <hr class="my-4" />
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-2">
+          <button
+            class="btn me-md-2"
+            type="button"
+            id="registrar"
+            (click)="registerUser()"
+          >
+            Registrar
+          </button>
+          <button class="btn" type="button" id="regresar">Regresar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
