@@ -12,6 +12,7 @@
   width: 50rem;
   border-radius: 0.5rem;
   margin-left: 15%;
+  box-shadow: 2px 2px 2px 2px #313745;
 }
 .card-title {
   color: #313745;
@@ -19,4 +20,12 @@
 #regresar {
   background-color: #637494;
   color: aliceblue;
+}
+.card-text {
+  height: 7.5rem;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+}
+::-webkit-scrollbar {
+  display: none;
 }
